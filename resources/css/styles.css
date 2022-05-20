@@ -3,20 +3,23 @@
     padding: 0;
     margin: 0;
 }
+.flex {
+    display: flex;
+    gap: clamp(1rem, 1.5rem, 2rem);
+    justify-content: space-between;
+    align-items: center;
+    /* gap: var(--gap, 1rem); */
+}
+
 
 /* HEADER STYLING */
 .primary-header {
     border: 2px solid rgba(41, 23, 1, 0.514);
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     min-height: 6rem;
     background-color: rgb(146, 125, 4);
 }
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap, 1rem);
-}
+
 /* .logo {
     border: 2px solid red;
     width: 13rem;
@@ -29,22 +32,54 @@
     max-height: 4rem;
     min-width: 10rem;
 }
-nav {
-    /* border: 2px solid black; */
+/* nav {
+    border: 2px solid black;
     padding: .5rem;
-}
-nav .primary-navigation {
-    /* border: 2px solid red; */
-    padding: .5rem;
+} */
+.primary-navigation {
+    border: 2px solid rgb(22, 2, 2);
+    padding: min(30vh, 10rem) 2rem;
     list-style-type: none;
+
+    z-index: 999; /*in relation to burger*/
+    
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+    inset: 0 0 0 40%;
+    background-color: rgb(146, 125, 4);
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+
     
 }
-nav li {
+.primary-navigation[data-visible="true"] { /*if data-visible="true" then the width will pop back from the right due to setting translateX to 0%*/
+    transform: translateX(0%);
+}
+/* .burger[aria-expanded="true"] {
+    background-image: url('Images/X-icon.svg');
+} */
+
+.primary-navigation li {
     border: 2px solid rgb(255, 255, 255);
     padding: .3rem;
+    /* opacity: 0; */
 }
-nav a {
+.primary-navigation a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
+}
+.burger {
+    z-index: 9999;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    
 }
