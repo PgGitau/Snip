@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER STYLING */
+header {
+    border: 2px solid red;
+    padding: .5rem;
+}
+.logo {
+    /* border: 2px solid red; */
+    width: 13rem;
+}
+.logo img {
+    /* margin: .2rem; */
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    height: 5rem;
+}
