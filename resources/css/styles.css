@@ -5,16 +5,46 @@
 }
 
 /* HEADER STYLING */
-header {
+.primary-header {
+    border: 2px solid rgba(41, 23, 1, 0.514);
+    padding-inline: 1rem;
+    min-height: 6rem;
+    background-color: rgb(146, 125, 4);
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap, 1rem);
+}
+/* .logo {
     border: 2px solid red;
-    padding: .5rem;
-}
-.logo {
-    /* border: 2px solid red; */
     width: 13rem;
-}
+} */
 .logo img {
     /* margin: .2rem; */
-    border: 2px solid rgba(0, 0, 0, 0.322);
-    height: 5rem;
+    /* border: 2px solid rgba(0, 0, 0, 0.322); */
+    object-position: center;
+    object-fit: cover;
+    max-height: 4rem;
+    min-width: 10rem;
+}
+nav {
+    /* border: 2px solid black; */
+    padding: .5rem;
+}
+nav .primary-navigation {
+    /* border: 2px solid red; */
+    padding: .5rem;
+    list-style-type: none;
+    
+}
+nav li {
+    border: 2px solid rgb(255, 255, 255);
+    padding: .3rem;
+}
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
 }
