@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 .flex {
     display: flex;
@@ -14,10 +15,15 @@
 
 /* HEADER STYLING */
 .primary-header {
-    border: 2px solid rgba(41, 23, 1, 0.514);
+    /* border: 2px solid rgba(41, 23, 1, 0.514); */
     padding-inline: 2rem;
     min-height: 6rem;
-    background-color: rgb(146, 125, 4);
+    background-color: rgb(6, 4, 133);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
 }
 
 /* .logo {
@@ -32,35 +38,25 @@
     max-height: 4rem;
     min-width: 10rem;
 }
-/* nav {
-    border: 2px solid black;
-    padding: .5rem;
-} */
 .primary-navigation {
-    border: 2px solid rgb(22, 2, 2);
-    padding: min(30vh, 10rem) 2rem;
+    /* border: 2px solid rgb(22, 2, 2); */
+    border-top: 2px solid rgba(0, 0, 0, 0.233);
+    padding: min(20vh, 10rem) 2rem;
     list-style-type: none;
 
-    z-index: 999; /*in relation to burger*/
-    
-
     transform: translateX(100%);
-    transition: transform 350ms ease-in;
-    inset: 0 0 0 40%;
-    background-color: rgb(146, 125, 4);
-    flex-direction: column;
-    align-items: center;
+    transition: transform 400ms ease-in;
 
     position: fixed;
+    inset: 5.8rem 0 0 40%;
 
-    
+    background-color: rgb(6, 4, 133);
+    flex-direction: column;
+    align-items: center;  
 }
-.primary-navigation[data-visible="true"] { /*if data-visible="true" then the width will pop back from the right due to setting translateX to 0%*/
+.primary-navigation-visible { /* THIS class is a new class added to change the primary-nav visibility using JS*/
     transform: translateX(0%);
 }
-/* .burger[aria-expanded="true"] {
-    background-image: url('Images/X-icon.svg');
-} */
 
 .primary-navigation li {
     border: 2px solid rgb(255, 255, 255);
@@ -72,8 +68,8 @@
     color: whitesmoke;
     font-weight: 500;
 }
+/* burger styling */
 .burger {
-    z-index: 9999;
     cursor: pointer;
 }
 .burger div {
@@ -82,4 +78,40 @@
     background-color: white;
     margin: 5px;
     
+}
+/* Burger icon change to X */
+.close-nav .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition: transform .5s ease;
+}
+.close-nav .line2 {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.close-nav .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    transition: transform .5s ease;
+}
+
+
+/* Dummy text */
+.dummy {
+    margin-top: 5.9rem;
+}
+/* MENU and CLOSE text styling */
+.menu-text, .close-text {
+    color: white;
+    position: absolute;
+    top: 2.5rem;
+    left: 22.7rem;
+}
+.close-text {
+    display: none;
+}
+/* MENU and CLOSE text displays when toggling */
+.menu-text[data-visible="true"] { /*if data-visible="true" then the MENU text should NOT display*/
+    display: none;
+}
+.close-text[data-visible="true"] { /*if data-visible="true" then the CLOSE text should display*/
+    display: block;
 }
