@@ -1,14 +1,23 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.burger');
+const menuText = document.querySelector('.menu-text');
+const closeText = document.querySelector('.close-text');
 
 navToggle.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute('data-visible');
-    /*console.log(visibility) should return false bcs that's how its set in the html*/
+    primaryNav.classList.toggle('primary-navigation-visible');
+    navToggle.classList.toggle('close-nav');
+
+    const visibility = menuText.getAttribute('data-visible');
     if (visibility === "false"){
-        primaryNav.setAttribute('data-visible', true); /*in the brackets its ('attribute', what value you set)*/  
-        navToggle.setAttribute('aria-expanded', true); /*for s-r aria-expanded becomes true bcs the menu is expanded*/
+        menuText.setAttribute('data-visible', true);
+        closeText.setAttribute('data-visible', true); 
     } else {
-        primaryNav.setAttribute('data-visible', false);
-        navToggle.setAttribute('aria-expanded', false);
+        menuText.setAttribute('data-visible', false);
+        closeText.setAttribute('data-visible', false);
     }
 })
+
+
+
+
+
