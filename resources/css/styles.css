@@ -177,15 +177,15 @@
     }
 }
 /* Burger icon change to X */
-.close-nav .line1 {
+.close-symbol .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
     transition: transform .5s ease;
 }
-.close-nav .line2 {
+.close-symbol .line2 {
     opacity: 0;
     transition: opacity .5s ease;
 }
-.close-nav .line3 {
+.close-symbol .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
     transition: transform .5s ease;
 }
@@ -218,6 +218,13 @@
 .close-text {
     display: none;
 }
+/* MENU and CLOSE text displays when toggling */
+.menu-text-off {
+    display: none;
+}
+.close-text-on {
+    display: block;
+}
 /* media queries for menu-text and close-text */
 @media (min-width: 641px) {
     .menu-text, .close-text {
@@ -225,10 +232,4 @@
     }
 }
 
-/* MENU and CLOSE text displays when toggling */
-.menu-text[data-visible="true"] { /*if data-visible="true" then the MENU text should NOT display*/
-    display: none;
-}
-.close-text[data-visible="true"] { /*if data-visible="true" then the CLOSE text should display*/
-    display: block;
-}
+
