@@ -5,15 +5,15 @@ const closeText = document.querySelector('.close-text');
 
 navToggle.addEventListener('click', () => {
     primaryNav.classList.toggle('primary-navigation-visible');
-    navToggle.classList.toggle('close-nav');
-
-    const visibility = menuText.getAttribute('data-visible');
+    navToggle.classList.toggle('close-symbol');
+    menuText.classList.toggle('menu-text-off');
+    closeText.classList.toggle('close-text-on');
+    
+    const visibility = navToggle.getAttribute('aria-expanded');
     if (visibility === "false"){
-        menuText.setAttribute('data-visible', true);
-        closeText.setAttribute('data-visible', true); 
+        navToggle.setAttribute('aria-expanded', true)
     } else {
-        menuText.setAttribute('data-visible', false);
-        closeText.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false)
     }
 })
 
