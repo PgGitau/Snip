@@ -532,3 +532,14 @@
     transition: none !important;
     animation: none !important;
 }
+
+/* FOOTER STYLING */
+footer {
+    text-align: center;
+    background-color: rgb(6, 4, 133);
+    height: 200px;
+}
+footer a {
+    color: white;
+    padding-inline: 2px;
+}
