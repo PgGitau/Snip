@@ -265,7 +265,7 @@
 }
 .image-header {
     /* border: 2px solid blue; */
-    background-image: url('resources/images/header-image.webp');
+    background-image: url('images/header-image.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
