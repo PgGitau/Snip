@@ -266,7 +266,7 @@
 .image-header {
     /* border: 2px solid blue; */
     /* background-color: rgba(151, 41, 7, 0.301); */
-    background-image: url('/resources/images/header-image.webp');
+    background-image: url('resources/images/header-image.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -363,7 +363,6 @@
     .image-header {
         height: 300px;
         /* border: 2px solid blue; */
-        /* margin-top: 10rem; */
         background-size: 35rem;
         background-position: right;
     }
@@ -408,7 +407,6 @@
         /* border: 2px solid rgb(47, 0, 255); */
     }
     .image-header {
-        /* margin-top: 10rem; */
         height: 400px;
         /* border: 2px solid blue; */
         background-size: 40rem;
