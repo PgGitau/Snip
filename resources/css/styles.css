@@ -595,6 +595,416 @@
     }
 }
 
+/* SERVICES SECTION */
+.services-container {
+    border-top: 2px solid rgba(1, 1, 83, 0.425);
+    /* background-image: url("./images/services-background.webp"); */
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-color: rgba(6, 4, 133, 0.616); */
+    /* margin-bottom: 1rem; */
+}
+.services-header {
+    /* border: 2px solid blue; */
+    padding-block: 1rem;
+    text-align: center;
+    /* margin-bottom: .2rem; */
+}
+.services-header h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+.services-header p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.services-list {
+    /* border: 2px solid rgb(122, 0, 20); */
+    color: white;
+    padding-block: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: .5rem;
+}
+.services-list h1, .services-list a {
+    position: relative;
+    top: 4.5rem;
+}
+.services-list h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.services-list a {
+    color: white;
+    transition: color 250ms ease-in,
+                font-size 250ms ease-in,
+                text-decoration 250ms ease-in;
+}
+.services-list a:hover {
+    font-size: 1.3rem;
+    color: rgb(178, 178, 240);
+    text-decoration: none;
+}
+.service {
+    border-radius: 1rem;
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 300px;
+    /* height: 200px;
+    width: 300px; */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.men {
+    background-image: url("../images/man.webp");
+    position: relative;
+    z-index: 1;
+}
+.men::before, .ladies::before, .kids::before {
+    content: '';
+    /* color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgb(21, 3, 51);
+    opacity: .4;
+    z-index: -1;
+}
+.ladies {
+    background-image: url("../images/woman.webp");
+    position: relative;
+    z-index: 1;
+}
+.kids {
+    background-image: url("../images/kids.webp");
+    position: relative;
+    z-index: 1;
+}
+/* media queries for services section */
+@media (min-width: 500px) and (max-width: 608px) {
+    .service {
+        height: 200px;
+        width: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .service {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+/* WHY-US SECTION */
+.why-us-container {
+    /* border: 2px solid red; */
+    /* margin-bottom: .2rem; */
+    padding: .5rem;
+    /* background-image: url("./images/hd-wallpaper-g9d4341994_640.jpg"); */
+    background-color: #16098bf1;
+    /* background-color: #3c3277a6; */
+}
+.why-us-container #why-header {
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.why-us {
+    margin-block: 4rem;
+    /* padding-block: .5rem; */
+    /* border: 2px solid black; */
+    /* padding: 1rem; */
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+/* .why > * {
+    flex-basis: 100%;
+} */
+.why {
+    width: 240px;
+    /* border: 1px solid #221008; */
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+.why h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.why p {
+    font-family:'Courier New', Courier, monospace;
+    line-height: .8rem;
+    /* color:rgb(156, 5, 5); */
+}
+.why p, .why h1 {
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+}
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+}
+.efficient::before,
+.quality::before,
+.pricing::before,
+.experience::before,
+.reputation::before {
+    color: #16098bd2;
+    font-family: "Font Awesome 6 Free";
+    padding: .2rem;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.efficient::before {
+    content: "\e518";
+}
+.quality::before {
+    content: "\f0a3";
+}
+.pricing::before {
+    content: "\24";
+}
+.experience::before {   
+    content: "\f5a2";
+}
+.reputation::before {
+    content: "\e561";
+}
+/* .get-in-touch {
+    text-transform: uppercase;
+    color: white;
+    border-block: 2px solid brown;
+    display: flex;
+    justify-content: space-around;
+} */
+
+/*media queries for why-us section*/
+@media (max-width: 528px) {
+    .why {
+    width: 400px;
+    }
+}
+@media (min-width: 1000px) {
+    .why {
+    width: 300px;
+    }
+}
+@media (min-width: 1264px) and (max-width: 1580px) {
+    .why {
+    width: 230px;
+    }
+}
+  /* Step 2: Reference Individual Icons */
+  /* Note: Make sure to include the correct weight and Unicode value for the icon */
+
+  /* here's an individual icon rule for the fa-user icon in the solid style which will show up next to any element with the "account" class */  
+  /* .quality::before {
+    font: var(--fa-font-solid);
+    content: "\f007";
+  } */
+
+/* CONTACT-US SECTION */
+.contact-us-container {
+    /* min-height: 700px;  */
+    background-image: url("../images/sewing-machine-640.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.contact-us-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(7, 0, 41);
+    opacity: .7;
+    z-index: -1;
+}
+.contact-us {
+    /* border: 2px solid black; */
+    padding-top: 2rem;
+}
+.contact-us h1 {
+    /* border: 2px solid white; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    /* padding-top: 3rem; */
+}
+.contact-us p {
+    /* border: 2px solid white; */
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    font-family:'Courier New', Courier, monospace;
+    padding-block: 1rem;
+    width: 100%;
+    margin: auto;
+    font-weight: bolder;
+}
+.contact-us-list {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.contact-us-list .contact {
+    /* border: 2px solid black; */
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: .5rem;
+}
+.contact h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+.contact p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.contact button {
+    margin-top: 1rem;
+    padding: .5rem;
+    font-weight: bolder;
+    font-size: .9rem;
+    background-color: rgb(255, 255, 255);
+    letter-spacing: .1rem;
+    font-family: 'Roboto Slab', serif;
+    border: 0;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+.contact button:hover {
+    background-color: rgb(20, 59, 2);
+    color: blanchedalmond;
+    cursor: pointer;
+}
+/* media queries for contact-us section */
+@media (min-width: 425px) {
+    .contact-us h1 {
+        font-size: 2.4rem;
+    }
+    .contact-us p {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+    .contact-us-list {
+        padding-block: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .contact h1 {
+        font-size: 1.3rem;
+    }
+    .contact p {
+        font-size: 1.2rem;
+    }
+    .contact-us-list {
+        padding-block: 2rem;
+    }
+}
+@media (min-width: 640px) {
+    .contact-us-container {
+        background-image: url("../images/sewing-machine-1280.webp");
+    }
+}
+@media (min-width: 1280px) {
+    .contact-us-container {
+        background-image: url("../images/sewing-machine-1920.webp");
+    }
+}
+
+
+/* TESTIMONIALS SECTION */
+.testimonials-container {
+    /* border: 2px solid rgb(0, 0, 0); */
+    padding-block: .3rem;
+    background-color: rgba(209, 192, 192, 0.582);
+}
+.testimonials-container #testimonial-header {
+    /* border: 2px solid rgb(0, 0, 0); */
+    text-decoration: underline;
+    padding: .3rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+}
+.testimonials {
+    /* border: 2px solid red; */
+    padding-block: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    justify-content: space-around;
+    gap: 1rem;
+}
+.testimony {
+    padding: .5rem;
+    /* border: 2px solid rgb(26, 8, 73); */
+    border-radius: 1rem;
+    height: fit-content;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+}
+.testimony h1 {
+    padding-block: 1rem;
+    font-size: 1.1rem;
+}
+.testimony q {
+    /* border: 2px solid red; */
+    font-weight: bold;
+    color: rgb(80, 76, 76);
+}
+.testimonials img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
+}
+.jane h1::before,
+.john h1::before,
+.doe h1::before {
+    /* border: 2px solid blue; */
+    display: block;
+    color: #328b09d2;
+    font-family: "Font Awesome 6 Free";
+    padding: .2rem;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.jane h1::before {
+    content: '\f005 \f005 \f005 \f005 \f005';
+}
+.john h1::before {
+    content: '\f005 \f005 \f005 \f005';
+}
+.doe h1::before {
+    content: '\f005 \f005 \f005';
+}
 /*to minimise transition when resizing screen [its not really necessary]*/
 .resize-animation-stopper * {
     transition: none !important;
