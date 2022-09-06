@@ -1197,7 +1197,7 @@ html {
     color: white;
     background-color: rgb(10, 2, 48);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: background-color 350ms ease-in, color 350ms ease-in, border-color 350ms ease-in;
 }
 .sale a:hover{
@@ -1205,7 +1205,15 @@ html {
     background-color: white;
     color: rgb(0, 0, 0);
 }
-
+/* media queries for sale section */
+@media (max-width: 283px) {
+    .sale-links {
+        padding: 0rem;
+    }
+    .sale a{
+        font-size: .8rem;
+    }
+}
 @media (min-width: 1024px) {
     .sale-container {
         height: 400px;
@@ -1296,14 +1304,15 @@ footer {
     /* color: rgb(230, 48, 48); */
     font-size: 2.4rem;
 }
-
 .footer-text {
     /* border: 2px solid rgb(255, 217, 0); */
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
     padding-block: .5rem;
     text-align: center;
     color: whitesmoke;
     font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1rem;
 }
 .footer-text span {
@@ -1311,4 +1320,17 @@ footer {
 }
 .footer-text a {
     color: yellow;
+}
+/* media queries for footer section */
+@media (max-width: 425px) {
+    .footer-container h1 {
+        font-size: 1.2rem;
+    }
+    .quick-links a,
+    .legal a {
+        font-size: .9rem;
+    }
+    #social {
+        font-size: 1.5rem;
+    }
 }
