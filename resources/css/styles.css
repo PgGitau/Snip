@@ -1314,7 +1314,7 @@ footer {
     font-style: italic;
     font-weight: bolder;
     font-size: 1rem;
-    /* padding-top: 5.5rem; */
+    padding-bottom: 1rem;
 }
 .footer-text span {
     color: red;
