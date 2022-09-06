@@ -1249,13 +1249,13 @@ footer {
     /* padding-block: 2rem; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     /* gap: .5rem; */
 
 }
 .footer-container {
     /* border: 2px solid rgb(163, 153, 153); */
-
+    padding-top: 2rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -1314,7 +1314,7 @@ footer {
     font-style: italic;
     font-weight: bolder;
     font-size: 1rem;
-    padding-top: 5.5rem;
+    /* padding-top: 5.5rem; */
 }
 .footer-text span {
     color: red;
