@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <script src="../../resources/nav.js" defer></script>
+    <script src="./contact.js" defer></script>
+    <title>Snip Sewing Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="../../resources/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../attribution/attributions.html" type="text/html">
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../resources/images/Snip-logos/Snip-logos_transparent2.png" alt="Snip Embroidery logo"></a> 
+        </div>
+
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation flex">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        
+
+        <div class="burger" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="menu-text">MENU</span>
+            <span class="close-text">CLOSE</span>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </header>
+
+    <!-- CONTACT-FORM SECTION -->
+    <section class="form-container">
+        <div class="header">
+            <h1>Please fill out the form below to contact us:</h1>
+        </div>
+        
+        <form class="form" id="form" action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="form-control">
+                <label for="firstName" class="block">First Name</label>
+                <input type="text" placeholder="John" id="firstName" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="lastName" class="block">Last Name</label>
+                <input type="text" placeholder="Doe" id="lastName" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email" class="block">Email</label>
+                <input type="email" placeholder="johndoe@gmail.com" id="email" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="phone" class="block">Telephone Number</label>
+                <input type="number" placeholder="0700 000 000" id="phone" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="message" class="block">Message</label>
+                <textarea placeholder="Write your Message Here" id="message" required></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="checkbox" id="terms" name="terms" value="accept" required>
+                <label for="terms" class="inline">I have read and agreed to the <a href="../pages/terms/terms.html">Terms and
+                        Conditions</a> and the <a href="../pages/terms/terms.html">Global Privacy Statement</a> on Data
+                    protection</label>
+            </div>
+
+            <div class="form-control form-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="contact-footer">
+        <section class="footer-container">
+            <div class="quick-links footer-types">
+                <h1>Quick Links</h1>
+                <div class="footer-links">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="./store.html">View Store</a>
+                    <a href="./about.html">About Us</a>
+                </div>
+            </div>
+
+            <div class="legal footer-types">
+                <h1>Legal Info</h1>
+                <div class="footer-links">
+                    <a href="../pages/terms/terms.html">Terms and Conditions</a>
+                    <a href="../pages/terms/terms.html">Data Protection</a>
+                    <a href="./cookie.html">Cookie Settings</a>
+                    <a href="./pages/attributions.html" target="_blank">Attributions</a>
+                </div>
+            </div>
+
+            <div class="socials footer-types">
+                <h1>Socials</h1>
+                <div class="footer-links" id="social">
+                    <a href="https://facebook.com" target="_blank" class="facebook"><span class="fa-brands fa-square-facebook"></span></a>
+                    <a href="https://instagram.com" target="_blank"><span class="fa-brands fa-square-instagram"></span></a>
+                    <a href="https://twitter.com" target="_blank"><span class="fa-brands fa-square-twitter"></span></a>
+                    <a href="https://youtube.com" target="_blank"><span class="fa-brands fa-square-youtube"></span></a>
+                </div>
+            </div>
+        </section>
+        <p class="footer-text">&copy;Snip Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
+    </footer>
+</body>
+</html>
