@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-container {
+    margin-top: 85px;
+    border: 1px solid rgb(14, 12, 12);
+    background-color: rgba(215, 206, 223, 0.438);
+    padding: 2rem 1rem;
+
+    /* display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-around; */
+}
+.header {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+
+    border: 1px solid rgb(3, 3, 3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(6, 4, 133);
+    color: whitesmoke;
+    padding: 1rem;
+    font-weight: 500;
+}
+.form {
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(180, 135, 222, 0.438);
+    max-width: 500px;
+    margin: auto;
+    
+    padding-inline: .5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-control {
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    border-radius: 5px;
+    margin-block: .5rem;
+    padding: .5rem;
+}
+.form-control .block {
+    font-weight: bold;
+    display: block;
+}
+.form-control .inline {
+    font-weight: bold;
+    display: inline;
+}
+.form-control input, .form-control textarea {
+    border: 2px solid black;
+    padding: .3rem;
+}
+.form-control textarea {
+    height: 150px;
+    width: 100%;
+}
+.form-control button {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(58, 56, 153);
+    color: aliceblue;
+    transition: all 350ms ease;
+}
+.form-control button:hover {
+    cursor: pointer;
+    background-color: rgb(17, 66, 2);
+}
+.form-control i {
+    /* visibility: hidden; */
+    display: none;
+}
+.form-control small {
+    display: none;
+} 
+/* success class styling */
+.form-control.success input, .form-control.success textarea {
+    border: 3px solid #025f29;
+}
+.form-control.success i.fa-check-circle {
+    /* visibility: visible; */
+    display: contents;
+    position: absolute;
+    color: #025f29;
+}
+/* Error class styling */
+.form-control.error input, .form-control.error textarea {
+    border-color: #e74c3c;
+}
+.form-control.error i.fa-exclamation-circle {
+    display: contents;
+    color: #e74c3c;
+}
+.form-control.error small {
+    color: #e74c3c;
+    display: block;
+}
+
+
+@media (min-width: 641px) {
+    .form-container {
+        margin-top: 96px;
+    }
+}
+@media (max-width: 360px) {
+    .form-control input {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 230px) and (max-width: 360px) {
+    .form-container {
+        margin-top: 4.25rem;
+    }
+}
