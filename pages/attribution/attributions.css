@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.attributes-container {
+    margin-top: 85px;
+    border: 1px solid rgb(14, 12, 12);
+    background-color: rgba(215, 206, 223, 0.438);
+    padding: 2rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-around; */
+}
+
+@media (min-width: 641px) {
+    .attributes-container {
+        margin-top: 96px;
+    }
+}
+@media (min-width: 230px) and (max-width: 360px) {
+    .attributes-container {
+        margin-top: 4.25rem;
+    }
+}
