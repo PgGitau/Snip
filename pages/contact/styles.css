@@ -19,16 +19,17 @@
     max-width: 500px;
     margin: auto;
 
-    border: 1px solid rgb(3, 3, 3);
+    border: 2px solid rgb(3, 3, 3);
+    border-bottom: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: rgb(6, 4, 133);
+    background-color: rgb(0, 128, 0);
     color: whitesmoke;
     padding: 1rem;
     font-weight: 500;
 }
 .form {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: rgba(180, 135, 222, 0.438);
@@ -54,7 +55,7 @@
 }
 .form-control input, .form-control textarea {
     border: 2px solid black;
-    padding: .3rem;
+    padding: .5rem;
 }
 .form-control textarea {
     height: 150px;
@@ -66,17 +67,17 @@
     width: 100%;
     display: block;
     
-    padding: .3rem .5rem;
+    padding: .5rem;
     font-size: 1.1rem;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(58, 56, 153);
+    background-color: rgb(0, 128, 0);
     color: aliceblue;
     transition: all 350ms ease;
 }
 .form-control button:hover {
     cursor: pointer;
-    background-color: rgb(17, 66, 2);
+    background-color: rgb(119, 4, 23);
 }
 .form-control i {
     /* visibility: hidden; */
