@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -10,6 +9,7 @@
     border: 1px solid rgb(14, 12, 12);
     background-color: rgba(215, 206, 223, 0.438);
     padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* GALLERY-CONTAINER HEADER */
